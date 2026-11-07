@@ -1,12 +1,10 @@
-# 忽略所有文件和目录
+gitignore
+# 先忽略所有文件和目录
 *
-# 保留 .gitignore 和 .gitattributes 本身
-!.gitignore
-!.gitattributes
-# 允许所有目录及其子目录
-!*/
-# 允许所有 .jar 文件
-!*.jar
-# 允许 Modules 文件夹下所有文件（递归）
-!Modules/
-!Modules/**
+
+# 如果希望 .gitignore 本身也能被提交到仓库，保留这一行
+# 如果严格到“仓库里只能有根目录 jar”，删掉这一行
+!/.gitignore
+
+# 只重新包含仓库根目录下的 .jar 文件
+!/*.jar

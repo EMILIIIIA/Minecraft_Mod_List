@@ -1,0 +1,14 @@
+gitignore
+# 先忽略所有文件和目录
+*
+
+# 仓库里只保留：根目录的 jar、ServerMods 目录下的 jar，以及两个配置文件
+!/.gitignore
+!/.gitattributes
+
+# 仓库根目录下的 .jar 文件
+!/*.jar
+
+# ServerMods 目录（目录本身要先放行，否则目录内的文件无法再被包含）
+!/ServerMods/
+!/ServerMods/*.jar
